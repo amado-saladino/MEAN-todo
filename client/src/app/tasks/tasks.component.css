@@ -1,0 +1,13 @@
+.link{
+    cursor: pointer;
+}
+
+.edit-title{
+    width: 30%;
+    background: navajowhite;
+    transition: width 2s;
+}
+
+.edit-title:hover{
+    width: 60%
+}

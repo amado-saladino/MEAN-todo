@@ -1,0 +1,24 @@
+{
+  "name": "tasklist",
+  "version": "1.0.0",
+  "description": "task list",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "task",
+    "list"
+  ],
+  "author": "Amado Saladino",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31",
+    "mongojs": "^2.4.1",
+    "mongoose": "^4.11.11"
+  }
+}
