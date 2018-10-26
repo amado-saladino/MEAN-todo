@@ -465,22 +465,22 @@ var TaskService = (function () {
         this.http = http;
     }
     TaskService.prototype.getTasks = function () {
-        return this.http.get("api/tasks")
+        return this.http.get("/api/tasks")
             .map(function (response) { return response.json(); })
             .catch(function (error) { return error; });
     };
     TaskService.prototype.addTask = function (newTask) {
-        return this.http.post("api/task", newTask)
+        return this.http.post("/api/task", newTask)
             .map(function (response) { return response.json(); })
             .catch(function (error) { return error; });
     };
     TaskService.prototype.deleteTask = function (id) {
-        return this.http.delete("api/tasks/" + id)
+        return this.http.delete("/api/tasks/" + id)
             .map(function (response) { return response.json(); })
             .catch(function (error) { return error; });
     };
     TaskService.prototype.updateTask = function (task) {
-        return this.http.put("api/tasks/" + task._id, task)
+        return this.http.put("/api/tasks/" + task._id, task)
             .map(function (response) { return response.json(); })
             .catch(function (error) { return error; });
     };
