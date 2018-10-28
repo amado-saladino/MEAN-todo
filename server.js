@@ -7,7 +7,7 @@ var tasks=require('./routes/tasks');
 
 var app=express();
 
-var port=process.env.port;
+var port=process.env.PORT || 3000;
 
 app.use(cors());
 
